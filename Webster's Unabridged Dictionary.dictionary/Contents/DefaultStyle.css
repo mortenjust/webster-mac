@@ -4,6 +4,21 @@
 d|entry {
 }
 
+html {
+  /* There is a style="background: white" on the html element we have to beat */
+  background: transparent !important;
+}
+
+@media (prefers-dark-interface) {
+  .hw {
+    /* blue is more readable on the dark background than maroon */
+    color: burlywood !important;
+  }
+  img {
+    filter: invert(100%);
+  }
+}
+
 body {
   font-family:sans-serif;
   font-weight: normal;
